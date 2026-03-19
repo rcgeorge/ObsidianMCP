@@ -1,0 +1,30 @@
+{
+  "name": "obsidian-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for interacting with Obsidian via the Local REST API plugin",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "obsidian-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "obsidian",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@huggingface/transformers": "^3.8.1",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  }
+}
